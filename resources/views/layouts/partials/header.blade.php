@@ -11,7 +11,7 @@
                     {{ __('Home') }}
                 </x-nav-link>
 
-                <x-nav-link href="{{ route('post.index') }}" :active="request()->routeIs('post.index')">
+                <x-nav-link  wire:navigate href="{{ route('post.index') }}" :active="request()->routeIs('post.index')">
                     {{ __('Blog') }}
                 </x-nav-link>
 
